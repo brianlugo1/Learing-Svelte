@@ -1,0 +1,19 @@
+.btn_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    border: none;
+    font-size: large;
+    padding: 10px;
+    color: black;
+    background-color: rgba(0,0,0,0);
+}
+
+button:hover {
+    cursor: pointer;
+}
