@@ -1,4 +1,4 @@
-# Learing-Svelte
+# Learning-Svelte
 
 Install community-maintained integrations:
   https://github.com/svelte-add/svelte-add
