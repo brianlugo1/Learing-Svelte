@@ -1,8 +1,6 @@
-<style>
-    @import '../main.css';
-</style>
-
 <script lang="ts">
+    import "../main.css";
+
     let welcome_message = "Welcome to this awesome Svelte Project Created by Brian Lugo!";
 
     import current_page from "$lib/current_page";

@@ -7,6 +7,11 @@
     --secondary_bg_color: var(--electric_blue);
     --terinary_bg_color: var(--aquamarine);
     --primary_txt_color: black;
+    --border-radius: 15px;
+}
+
+@keyframes fadein {
+  100% { opacity: 1 }
 }
 
 #main_div {
@@ -62,14 +67,102 @@
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    opacity: 0;
+    animation: fadein 1s linear forwards;
 }
 
 .top_row {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.home_body_div {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.home_current_page_title {
+    padding: 1rem;
+}
+
+.home_p_description {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    font-size: x-large;
+}
+
+.home_todo_div {
+    background-color: var(--primary_bg_color);
+    border-radius: calc(var(--border-radius)/2);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.todo_id_input, .fetch_todo_button {
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.todo_id_input {
+    text-align: center;
+}
+
+.fetch_todo_button {
+    background-color: white;
+}
+
+.fetch_todo_button:hover {
+    cursor: pointer;
+}
+
+.home_display_todos_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_display_todos_h1 {
+    font-size: 1000;
+    padding: 3.78rem;
+}
+
+.home_retrieve_todo_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo_card_div {
+    background-color: var(--secondary_bg_color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0;
+    animation: fadein 1s linear forwards;
+}
+
+.todo_completed_div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
     align-items: center;
 }
 
